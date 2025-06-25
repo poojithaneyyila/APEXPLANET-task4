@@ -1,0 +1,144 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e6f0ff, #fffaf0);
+  color: #222;
+}
+
+/* Header */
+header {
+  background: #002244;
+  padding: 1rem 2rem;
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Navigation */
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f5e8d7;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Sections and Containers */
+.section {
+  padding: 4rem 2rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+}
+
+/* Glass Effect */
+.glass {
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.profile {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #002244;
+}
+.profile-info p {
+  margin: 4px 0;
+}
+.profile-icons a {
+  color: #002244;
+  font-size: 1.2rem;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.profile-icons a:hover {
+  color: #004466;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+ul li::before {
+  content: "✔ ";
+  color: #003366;
+}
+
+/* Upload Link Button */
+.upload-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  background-color: #002244;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.upload-link:hover {
+  background-color: #004466;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel {
+    flex-direction: column;
+  }
+
+  nav,
+  .social-icons {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+
+
+
+
+
